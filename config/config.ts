@@ -1,10 +1,11 @@
 import { defineConfig } from 'umi';
+import routes from './routes';
 
 export default defineConfig({
   nodeModulesTransform: {
     type: 'none', // 依赖的模块是否也需要转换编译，这里涉及IE11的兼容性
   },
-  routes: [{ path: '/', component: '@/pages/index' }],
+  routes: routes,
   fastRefresh: {},
   title: 'umi-admin-boilerplate',
   favicon: 'assets/favicon.ico',
